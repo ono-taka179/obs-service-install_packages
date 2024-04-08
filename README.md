@@ -1,6 +1,6 @@
 # obs-service-install_packages
 
-obs-service-install_packages is a source service for OpenSUSE Build Service. This service installs multiple packages with the same name for different architectures in the build environment. This is composed of the following files.
+obs-service-install_packages is a source service for OpenSUSE Build Service. This service installs multiple packages with the same name for different architectures in the build environment. 
 
 # How to use
 
