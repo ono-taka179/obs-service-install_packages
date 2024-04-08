@@ -29,7 +29,7 @@ tar czvf obs-service-install_packages-0.1.0.tar.gz /path/to/obs-service-install_
 
 The installation destination for the packages placed in `obs-service-install_packages-0.1.0` is specified as `/usr/lib/obs/service` in the build environment.
 
-## Building obs-service-install_packages
+## Build obs-service-install_packages
 
 There are various methods for this. You can register tar.gz file and spec file in the OBS repository and build them. Alternatively, you can create RPM using rpmbuild and import them into OBS. Both methods use the package name `obs-service-install_packages` .
 
