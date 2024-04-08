@@ -1,0 +1,21 @@
+#!/bin/bash
+
+SERVICEDIR="/usr/lib/obs/service"
+CHECKINSTALLED="glibc.i686"
+
+cd "$SERVICEDIR" || exit 1
+
+rpms=$(ls ./*.rpm) || exit 1
+
+echo $rpms
+
+dnf list --installed | grep "$CHECKINSTALLED"
+
+if [ "$?" -ne 0 ] ; then
+#    rpm -Uvh $rpms || exit 1
+    dnf -y install $rpms || exit 1
+else
+    echo "Skip installing packages."
+fi
+
+exit 0

@@ -1,0 +1,5 @@
+<service name="install_packages">
+  <summary>tool for installing packages</summary>
+  <description>It supports installing packages.</description>
+</service>
+
