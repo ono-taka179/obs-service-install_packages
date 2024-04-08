@@ -1,3 +1,3 @@
 <services>
-  <service name="ml_packages" mode="buildtime" />
+  <service name="install_packages" mode="buildtime" />
 </services>
